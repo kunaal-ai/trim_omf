@@ -75,12 +75,21 @@ This project uses CircleCI for continuous integration. The configuration is loca
 - **Environment Variables**: Define necessary variables in the `.env` file.
 - **Playwright Settings**: Adjust `playwright.config.ts` to modify browser settings, timeouts, and other test configurations.
 
-## Contributing
+## Helper commands
+- ```npx playwright test```
+    Runs the end-to-end tests.
 
-We welcome contributions! Please follow these steps:
+- ```npx playwright test --ui```
+    Starts the interactive UI mode.
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature-branch-name`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature-branch-name`.
-5. Submit a pull request.
+- ```npx playwright test --project=chromium```
+    Runs the tests only on Desktop Chrome.
+
+- ```npx playwright test example```
+    Runs the tests in a specific file.
+
+- ```npx playwright test --debug```
+    Runs the tests in debug mode.
+
+- ```npx playwright codegen```
+    Auto generate tests with Codegen.
